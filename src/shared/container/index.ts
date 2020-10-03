@@ -19,4 +19,7 @@ container.registerSingleton<IProductsRepository>(
   ProductsRepository,
 );
 
-// TODO: OrdersRepository
+container.registerSingleton<IOrdersRepository>(
+  'OrdersRepository',
+  OrdersRepository,
+);
